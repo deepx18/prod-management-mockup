@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+/* ─────────────────────────────────────────────────────────────
+   AssurCore design tokens — extracted from the Stitch theme
+   (tableau_de_bord / enterprise_commission_architecture/DESIGN.md)
+   ───────────────────────────────────────────────────────────── */
+@theme {
+  --font-sans: var(--font-inter), Inter, ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), "JetBrains Mono", ui-monospace, monospace;
+
+  /* Stitch surface palette */
+  --color-background: #f8f9ff;
+  --color-surface: #f8f9ff;
+  --color-surface-lowest: #ffffff;
+  --color-surface-low: #eff4ff;
+  --color-surface-container: #e5eeff;
+  --color-surface-high: #dce9ff;
+  --color-surface-highest: #d3e4fe;
+  --color-surface-dim: #cbdbf5;
+  --color-surface-variant: #d3e4fe;
+
+  /* Text colors */
+  --color-on-surface: #0b1c30;
+  --color-on-surface-variant: #45464d;
+  --color-secondary: #545f73;
+  --color-on-secondary: #ffffff;
+
+  /* Structural */
+  --color-primary: #000000;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #131b2e;
+  --color-on-primary-container: #7c839b;
+  --color-inverse-surface: #213145;
+  --color-inverse-primary: #bec6e0;
+
+  /* Semantic */
+  --color-success: #069669;
+  --color-on-success: #ffffff;
+  --color-success-container: #d1fae5;
+  --color-on-success-container: #065f46;
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+  --color-warning-container: #fffbef;
+  --color-on-warning-container: #b45309;
+  --color-warning: #d97706;
+
+  /* Secondary containers (badges) */
+  --color-secondary-container: #d5e0f8;
+  --color-on-secondary-container: #586377;
+  --color-outline: #76777d;
+  --color-outline-variant: #c6c6cd;
+
+  /* Typography scale (Stitch) */
+  --text-display-kpi: 30px;
+  --text-display-kpi--line-height: 36px;
+  --text-display-kpi--letter-spacing: -0.025em;
+  --text-display-kpi--font-weight: 700;
+  --text-headline-lg: 24px;
+  --text-headline-lg--line-height: 32px;
+  --text-headline-lg--letter-spacing: -0.02em;
+  --text-headline-lg--font-weight: 700;
+  --text-headline-md: 18px;
+  --text-headline-md--line-height: 26px;
+  --text-headline-md--letter-spacing: -0.015em;
+  --text-headline-md--font-weight: 600;
+  --text-headline-sm: 16px;
+  --text-headline-sm--line-height: 24px;
+  --text-headline-sm--letter-spacing: -0.01em;
+  --text-headline-sm--font-weight: 600;
+  --text-body-default: 14px;
+  --text-body-default--line-height: 20px;
+  --text-body-default--font-weight: 400;
+  --text-body-medium: 14px;
+  --text-body-medium--line-height: 20px;
+  --text-body-medium--font-weight: 500;
+  --text-body-compact: 13px;
+  --text-body-compact--line-height: 18px;
+  --text-body-compact--font-weight: 400;
+  --text-label-badge: 12px;
+  --text-label-badge--line-height: 16px;
+  --text-label-badge--font-weight: 500;
+  --text-label-table-header: 11px;
+  --text-label-table-header--line-height: 16px;
+  --text-label-table-header--font-weight: 600;
+  --text-label-table-header--letter-spacing: 0.05em;
+
+  /* Radii (Stitch) */
+  --radius-sm: 0.125rem;
+  --radius-md: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+
+  /* Spacing (Stitch) */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 0.75rem;
+  --spacing-lg: 1rem;
+  --spacing-xl: 1.5rem;
+}
+
+/* Base styles */
+body {
+  background: var(--color-background);
+  color: var(--color-on-surface);
+  font-size: 14px;
+  line-height: 20px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbars hidden like Stitch output (dense data app look) */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Table numeric alignment */
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
